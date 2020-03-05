@@ -1,10 +1,12 @@
 # Quantifier Elimination INvariant Generator
+> Equations included in documentation but not rendered in GitHub README. Please see pdf version [here](docs.pdf).
+
 This tool is designed to parse simple imperative functions containing loops and use the method of quantifier elimination to automatically generate loop invariants. To read more about the method of quantifier elimination, please read  [Professor Kapur's paper](https://www.cs.unm.edu/~kapur/mypapers/aca2004.pdf) .
 
 **Links to Code Modules**
-* [Simple Imperative Langue Grammar]()
-* [Parser]()
-* [Solver]()
+* [Simple Imperative Langue Grammar](frontend/src/parser/Qing.g4)
+* [Parser](frontend/src/parser/FunctionParser.js)
+* [Solver](backend/generator/invariant_generator.py)
 
 Since the tool is configured as a web application and intended to eventually be deployed on a server to promote accessibility, some additional environment setup is required. The backend (including the invariant generator) runs in [Python 3.7](https://www.python.org/downloads/) using [Django>2.2](https://www.djangoproject.com/), and additional package requirements can be found in the [requirements.txt](a) file. The frontend (including the function parser) runs in [NodeJS](https://nodejs.org/en/) and requires npm and several modules.
 
