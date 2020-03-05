@@ -8,7 +8,7 @@ This tool is designed to parse simple imperative functions containing loops and 
 * [Parser](frontend/src/parser/FunctionParser.js)
 * [Solver](backend/generator/invariant_generator.py)
 
-Since the tool is configured as a web application and intended to eventually be deployed on a server to promote accessibility, some additional environment setup is required. The backend (including the invariant generator) runs in [Python 3.7](https://www.python.org/downloads/) using [Django>2.2](https://www.djangoproject.com/), and additional package requirements can be found in the [requirements.txt](a) file. The frontend (including the function parser) runs in [NodeJS](https://nodejs.org/en/) and requires npm and several modules.
+Since the tool is configured as a web application and intended to eventually be deployed on a server to promote accessibility, some additional environment setup is required. The backend (including the invariant generator) runs in [Python 3.7](https://www.python.org/downloads/) using [Django>2.2](https://www.djangoproject.com/), and additional package requirements can be found in the [requirements.txt](backend/requirements.txt) file. The frontend (including the function parser) runs in [NodeJS](https://nodejs.org/en/) and requires npm and several modules.
 
 ### Backend Setup
 Once Python 3.7 is installed, navigate to the `backend` directory and run `pip install -r requirements.txt`. To run the solver API, run `python manage.py runserver` from `\backend`. The API can be accessed at `http://localhost:8000` from your browser or an HTTP request tool.
