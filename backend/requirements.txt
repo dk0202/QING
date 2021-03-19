@@ -1,6 +1,6 @@
 Django==2.2.3
 django-cors-headers==3.0.2
-djangorestframework==3.10.1
+djangorestframework==3.11.2
 mpmath==1.1.0
 numpy==1.16.4
 pytz==2019.1
